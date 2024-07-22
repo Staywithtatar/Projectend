@@ -1,0 +1,28 @@
+.slide-animation {
+    animation: slide 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-10px);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.writing-animation {
+    animation: writing 3s steps(30) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+@keyframes writing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
